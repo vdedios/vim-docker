@@ -37,7 +37,8 @@ if bufwinnr(1)
 endif
 
 " Forest night theme settings
-colorscheme desert
+" colorscheme desert
+  colorscheme forest-night
 
 " Lightline configs
 set laststatus=2

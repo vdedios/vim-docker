@@ -1,11 +1,11 @@
 # ⌨️  VIM Docker 🐳
 Are you working in a machine and you wish you had all your vim configs? Maybe trying to install all your configs from scratch? Skip the pain and deploy vim-docker with a single click! A Docker image that ports VIM and all your configs to any machine.
 
+## Installation
+```./install.sh```
+
 ## Usage
-For installation:
-```>$ ./install.sh```
-For using:
-```>$ vimd name_of_file```
+```vimd name_of_file```
 
 ## How it works?
 

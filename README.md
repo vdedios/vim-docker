@@ -1,6 +1,12 @@
 # ⌨️  VIM Docker 🐳
 Are you working in a machine and you wish you had all your vim configs? Maybe trying to install all your configs from scratch? Skip the pain and deploy vim-docker with a single click! A Docker image that ports VIM and all your configs to any machine.
 
+## Usage
+For installation:
+```>$ ./install.sh```
+For using:
+```>$ vimd name_of_file```
+
 ## How it works?
 
 The image its very lightweight since it's based on the lightest Linux distribution, Alpine. It uses bind mounts so you actually interact with your host files as you would with a host version of VIM:
@@ -17,7 +23,7 @@ This image is intended to be as simple as possible as well as accessible to anyo
 
 ### If you want to change paths you should modify the following environment variables:
 
-Go to `docker-compose.yaml` and change the following:
+Go to `vimd` and change the following (if already installed, go to /usr/local/bin):
 
 - `HOST_PATH=/Users`  The local path  that will be bind mount into the container
 - `CONTAINER_PATH=/Local` The path where your `HOST_PATH` will be mounted inside the container

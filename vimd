@@ -1,0 +1,12 @@
+#! /bin/bash
+
+# Define user and host variables
+HOST_PATH="/"
+CONTAINER_PATH="/Local"
+
+# Run container
+docker run  -it \
+			--mount type=bind,source=${HOST_PATH},destination=${CONTAINER_PATH}\
+			--env CURRENT_DIR=${PWD}\
+			--env CONTAINER_PATH=${CONTAINER_PATH}\
+			vimd $1

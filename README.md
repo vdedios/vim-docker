@@ -21,14 +21,14 @@ The image its very lightweight since it's based on the lightest Linux distributi
 ## Make it yours!
 This image is intended to be as simple as possible as well as accessible to anyone, here is a little advice to configure it.
 
-### If you want to change paths you should modify the following environment variables:
+#### If you want to change paths you should modify the following environment variables:
 
 Go to `vimd` and change the following (if already installed, go to /usr/local/bin):
 
 - `HOST_PATH=/Users`  The local path  that will be bind mount into the container
 - `CONTAINER_PATH=/Local` The path where your `HOST_PATH` will be mounted inside the container
 
-### Add your own vim configs
+#### Add your own vim configs
 
 For now only simple vimrc and color theme is supported. Add your own vimrc into `./srcs` folder and simple color scheme into `./srcs/colors`
 

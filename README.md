@@ -5,9 +5,9 @@ Are you working in a machine and you wish you had all your vim configs? Maybe tr
 
 The image its very lightweight since it's based on the lightest Linux distribution, Alpine. It uses bind mounts so you actually interact with your host files as you would with a host version of VIM:
 
-- From default it will mount `HOST_PATH` *(default defined as /Users)* in `CONTAINER_PATH` *(default defined as /Local)* so you can have fully read and write access to all files  in your local machine.
+- From default it will bind mount `HOST_PATH` *(default defined as /Users)* in `CONTAINER_PATH` *(default defined as /Local)* so you can have fully read and write access to all files  in your local machine.
 
-- You will be able to browse files inside Vim with Netrw or any other file explorer as always. If you would not like this path to be loaded you can change the environment variables as listed down.
+- You will be able to reach and browse all files from `HOST_PATH` inside Vim with Netrw or any other file explorer as always. If you would not like any of this paths to be loaded you can change the environment variables as listed down.
 	
 - Open any file as you would with Vim. Vim-docker will load Vim from a desired location/file in case you want to use buffers, sessions or any other feature but you will be able to reach any file in your `HOST_PATH`. If you don't indicate any path or file Vim will load from the current, pwd, as it would in local.
 
@@ -20,7 +20,7 @@ This image is intended to be as simple as possible as well as accessible to anyo
 Go to `docker-compose.yaml` and change the following:
 
 - `HOST_PATH=/Users`  The local path  that will be bind mount into the container
-- `CONTAINER_PATH=/Local` The path where your USER_PATH will be mounted inside the container
+- `CONTAINER_PATH=/Local` The path where your `HOST_PATH` will be mounted inside the container
 
 ### Add your own vim configs
 

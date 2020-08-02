@@ -1,5 +1,7 @@
 #! /bin/ash
 
+# Enable Vim to open the desired file/path
+
 ROOT_PATH=/Local
 
 if [[ ${1:0:1} == "/" ]]; then

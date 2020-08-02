@@ -9,4 +9,4 @@ docker run  -it \
 			--mount type=bind,source=${HOST_PATH},destination=${CONTAINER_PATH}\
 			--env CURRENT_DIR=${PWD}\
 			--env CONTAINER_PATH=${CONTAINER_PATH}\
-			vimd $1
+			vim-docker $1

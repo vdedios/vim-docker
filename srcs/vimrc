@@ -1,0 +1,60 @@
+" This is a simple vimrc to use as vanilla VIM
+
+syntax on
+set number
+set cursorline
+set nocompatible
+inoremap jj <ESC>
+inoremap { {<CR>}<Esc>ko
+inoremap <  <><ESC>hli
+inoremap "  ""<ESC>hli
+inoremap '  ''<ESC>hli
+inoremap [  []<ESC>hli
+inoremap (  ()<ESC>hli
+nnoremap :w :wa
+nnoremap :%y + :yy
+map <C-l> gt
+map <C-h> gT
+map  r <C-r>
+set splitright
+set splitbelow
+set noerrorbells visualbell t_vb=
+set clipboard=unnamed
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
+" Split window mapping
+if bufwinnr(1)
+    map H <C-W>h
+    map J <C-W>j
+    map K <C-W>k
+    map L <C-W>l
+    map * <C-W>>
+    map _ <C-W><
+    map + <C-W>+
+    map - <C-W>-
+endif
+
+" Forest night theme settings
+colorscheme desert
+
+" Lightline configs
+set laststatus=2
+set noshowmode
+set encoding=UTF-8
+
+" Added set
+set smartindent                        
+set hlsearch                            
+set undofile                           
+set undodir=$HOME/.cache/vim/undo     
+set timeoutlen=500                   
+set hidden                          
+set scrolloff=5                    
+set viminfo='1000                       
+""set autoindent                       
+set wildmenu                          
+set autoread                         
+
+set foldmethod=indent

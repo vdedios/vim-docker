@@ -1,5 +1,7 @@
 # ⌨️  VIM Docker 🐳
-Are you working in a machine and you wish you had all your vim configs? Maybe trying to install all your configs from scratch? Skip the pain and deploy vim-docker with a single click! A Docker image that ports VIM and all your configs to any machine. __Currently only works on MacOS and Linux__.
+Are you working in a machine and you wish you had all your vim configs?
+Maybe trying to install all your configs from scratch? 
+👉  Skip the pain and deploy vim-docker with a single click! A Docker image that ports VIM and all your configs to any machine. __Currently only works on MacOS and Linux__.
 
 ## Installation
 ```./install.sh```
